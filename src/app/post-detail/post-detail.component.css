@@ -1,0 +1,13 @@
+.po-wrapper {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding: 16px;
+}
+  
+po-page-default {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+}
+  
+  
