@@ -1,0 +1,18 @@
+<div class="search-bar">
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Pesquisar por título">
+  <button (click)="searchPosts()">Buscar</button>
+</div>
+
+<div *ngFor="let post of paginatedPosts" >
+    <div (click)="goToPostDetail(post.id)" class="post-item">
+        <h3>{{ post.title }}</h3>
+            <p>{{ post.body }}</p>
+            <hr>
+    </div>
+</div>
+
+<div class="pagination">
+  <button (click)="page = page - 1" [disabled]="page === 1">Anterior</button>
+  <span>Página {{ page }}</span>
+  <button (click)="page = page + 1" [disabled]="page * pageSize >= filteredPosts.length">Próxima</button>
+</div>

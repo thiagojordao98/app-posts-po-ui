@@ -1,0 +1,27 @@
+.post-card {
+    margin-bottom: 16px;
+  }
+  
+  po-card {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  po-divider {
+    margin: 20px 0;
+  }
+
+.post-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+  
+.post-item:hover {
+    transform: scale(1.02); /* Aumenta o tamanho em 5% ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para dar destaque */
+}
